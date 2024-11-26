@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 定位按钮到右侧中间 */
+.fixed-button {
+    position: fixed;
+    right: 20px;        
+    top: 50%;          
+    transform: translateY(-50%);  
+    background-color: #4cadaf;  
+    color: white;      
+    padding: 15px 25px;  
+    font-size: 18px;    
+    text-decoration: none;   
+    border-radius: 30px;  
+    cursor: pointer;      /* 鼠标悬停时显示为可点击 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease; /* 背景色过渡效果 */
+}
+
+.fixed-button:hover {
+    background-color: #45a049;   /* 鼠标悬停时按钮的背景色变化 */
+}

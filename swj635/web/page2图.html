@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏截图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3列布局 */
+            grid-gap: 0px; /* 去掉图片之间的间隙 */
+            width: 100vw;  /* 宽度铺满视口宽度 */
+            height: 100vh; /* 高度铺满视口高度 */
+            margin: 0;
+        }
+
+        .image-container img {
+            width: 100%; /* 图片宽度填满容器 */
+            height: 100%; /* 图片高度填满容器 */
+            object-fit: cover; /* 保持图片比例并覆盖整个容器 */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="../images/page2素材/恶兆.jpg" alt="Image 1">
+        <img src="../images/page2素材/米卫兵.avif" alt="Image 2">
+        <img src="../images/page2素材/狂龙！.jpg" alt="Image 3">
+        <img src="../images/page2素材/黑剑.jpg" alt="Image 4">
+        <img src="../images/page2素材/米塔恩.jpg" alt="Image 5">
+        <img src="../images/page2素材/龙王.jpg" alt="Image 6">
+    </div>
+</body>
+
+<link rel="stylesheet" href="个人主页跳转.css">
+<a href="../index.html" class="fixed-button">个人主页</a>
+
+</html>
+
+
+
+
+
+

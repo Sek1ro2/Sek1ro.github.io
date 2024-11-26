@@ -1,0 +1,154 @@
+/* 基本样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* 头部导航 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 20px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* 主图区域 */
+.hero {
+    background: url('../images/page1素材/破戒僧.jpg') center center no-repeat; 
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero p {
+    font-size: 24px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* 游戏介绍 */
+.game-description {
+    background: url('../images/page1素材/修罗狼.jpg') center center no-repeat; 
+    background-size: cover;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.game-description .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-description h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.game-description p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* 游戏特色 */
+.game-features {
+    background: url('../images/page1素材/天守阁.png') center center no-repeat; 
+    background-size: cover;
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明背景 */
+}
+
+.game-features .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.feature-item {
+    flex: 1;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* 游戏截图 */
+.screenshots {
+    padding: 40px;
+    background-color: #333;
+}
+
+.screenshot-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.screenshot-gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 页脚 */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

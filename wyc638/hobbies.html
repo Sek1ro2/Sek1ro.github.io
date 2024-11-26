@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的兴趣爱好</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Arial", sans-serif;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .container {
+            max-width: 900px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            margin-top: 80px;
+            text-align: center;
+            animation: fadeIn 2s ease-out;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-gallery img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.6s;
+        }
+
+        .image-gallery img:hover {
+            transform: rotate(10deg) scale(1.1);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            padding: 10px 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            font-size: 14px;
+            width: 100%;
+        }
+		/* Footer 样式 */
+footer {
+   
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* 半透明黑色背景 */
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* 确保位于最上层 */
+}
+
+/* 按钮基础样式 */
+.footer-buttons .btn {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* 按钮渐变背景 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* 按钮 hover 动态效果 */
+.footer-buttons .btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* 反向渐变效果 */
+    transform: scale(1.1); /* 放大效果 */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* 按钮按下动态效果 */
+.footer-buttons .btn:active {
+    transform: scale(0.95); /* 按下时缩小 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+       <nav>
+    <a href="index.html">主页</a>
+    <a href="about.html">关于我</a>
+    <a href="hobbies.html">兴趣爱好</a>
+    <a href="school.html">我的学校</a>
+    <a href="hometown.html">我的家乡</a>
+    <a href="new_course.html">新生实践课</a>
+   
+</nav>
+
+    </header>
+
+    <div class="container">
+        <h1>我的兴趣爱好</h1>
+        <p>我的兴趣爱好包括羽毛球和听周杰伦的音乐。</p>
+        <p>羽毛球是我喜欢的一项运动，不仅锻炼身体，还能放松心情。</p>
+        <p>周杰伦的音乐总是充满情感，他的歌曲陪伴了我的成长。</p>
+
+        <div class="image-gallery">
+            <img src="imgs/badminton.png" alt="羽毛球">
+            <img src="imgs/jay.png" alt="周杰伦">
+        </div>
+    </div> <footer>
+        <p>欢迎有相同爱好的小伙伴一起打球</p>
+    </footer>
+	<footer>
+    <div class="footer-buttons">
+        <a href="class.html" class="btn">返回班级页面</a>
+        <a href="../../index.html" class="btn">返回宿舍页面</a>
+    </div>
+</footer>
+
+</body>
+</html>

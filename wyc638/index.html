@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <style>
+/* Footer 样式 */
+footer {
+     position：fixed；/* 固定在页面底部 */
+    bottom: 10;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0); /* 半透明黑色背景 */
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* 确保位于最上层 */
+}
+
+/* 按钮基础样式 */
+.footer-buttons .btn {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1111cb, #6895fc); /* 按钮渐变背景 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* 按钮 hover 动态效果 */
+.footer-buttons .btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* 反向渐变效果 */
+    transform: scale(1.1); /* 放大效果 */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* 按钮按下动态效果 */
+.footer-buttons .btn:active {
+    transform: scale(0.95); /* 按下时缩小 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+ .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            margin: 0;
+            font-family: "Arial", sans-serif;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+			
+            background-size: 200% 200%;
+            animation: gradientBackground 10s infinite alternate;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+			 color: black;
+        }
+
+        @keyframes gradientBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6b6b;
+            transform: scale(1.1);
+        }
+
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #ff6b6b;
+            transition: width 0.3s;
+            margin-top: 5px;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .welcome {
+            text-align: center;
+            animation: fadeIn 3s;
+        }
+
+        .welcome h1 {
+            font-size:1px;
+            margin: 0;
+            line-height: 50;
+        }
+		.avatar {
+  width: 100px; /* 设置头像宽度 */
+  height: 100px; /* 设置头像高度 */
+  border-radius: 50%; /* 设置圆形头像 */
+}
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <nav>
+    <a href="index.html">主页</a>
+    <a href="about.html">关于我</a>
+    <a href="hobbies.html">兴趣爱好</a>
+    <a href="school.html">我的学校</a>
+    <a href="hometown.html">我的家乡</a>
+    <a href="new_course.html">新生实践课</a>   
+</nav>
+
+</header>
+<footer>
+    <div class="footer-buttons">
+        <a href="class.html" class="btn">返回班级页面</a>
+        <a href="../index.html" class="btn">返回宿舍页面</a>
+    </div>
+</footer>
+
+
+
+    <div class="welcome"><strong>welcome to my web！！！welcome  to huster ichor’home ！！！</strong>
+<h1></h1>
+<div class="avatar-container">
+        <img src="imgs/photo.png" alt="tou"class="avatar">
+    </div>
+    </div>
+	 <div class="container">
+        <div class="header">
+        
+            <h1>王一丞</h1>
+			<p>来自：湖南-衡阳
+            <p>坐标：湖北-武汉，华中科技大学</p>
+            <p>计算机科学与技术学院 2404 班</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的新生实践课</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+	
+      <style> nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6b6b;
+        }
+		  /* Footer 样式 */
+footer {
+  
+    bottom: 0;
+    left: 0;
+    width: 100%;
+   /* 半透明黑色背景 */
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* 确保位于最上层 */
+}
+
+/* 按钮基础样式 */
+.footer-buttons .btn {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* 按钮渐变背景 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* 按钮 hover 动态效果 */
+.footer-buttons .btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* 反向渐变效果 */
+    transform: scale(1.1); /* 放大效果 */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* 按钮按下动态效果 */
+.footer-buttons .btn:active {
+    transform: scale(0.95); /* 按下时缩小 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+</style>
+     <nav>
+    <a href="index.html">主页</a>
+    <a href="about.html">关于我</a>
+    <a href="hobbies.html">兴趣爱好</a>
+    <a href="school.html">我的学校</a>
+    <a href="hometown.html">我的家乡</a>
+    <a href="new_course.html">新生实践课</a>
+   
+</nav>
+
+    </header>
+    <main>
+        <h1>我的新生实践课</h1>
+        <table>
+            <tr>
+                <th>课程</th>
+                <th>内容</th>
+            </tr>
+            <tr>
+                <td>LaTeX</td>
+                <td>学习文档排版技巧</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>python编程基础</td>
+            </tr>
+			 <tr>
+                <td>Git</td>
+                <td>学习git基本知识和基本操作</td>
+            </tr>
+			<tr>
+                <td>网页制作</td>
+                <td>html5语言和基本网页制作</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <p>感谢非常好的cjz老师的辛勤付出和那些好用的盗版软件</p>
+    </footer>
+	<footer>
+    <div class="footer-buttons">
+        <a href="class.html" class="btn">返回班级页面</a>
+        <a href="../../index.html" class="btn">返回宿舍页面</a>
+    </div>
+</footer>
+
+</body>
+</html>

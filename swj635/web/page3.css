@@ -1,0 +1,161 @@
+/* 基本样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* 导航栏样式 */
+  header {
+    background-color: #111;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  nav a:hover {
+    color: #f39c12;
+  }
+  
+  /* 主横幅样式 */
+  .hero {
+    background-image: url('../images/page3素材/悟空.png');
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  .cta-btn {
+    background-color: #f39c12;
+    color: #111;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e67e22;
+  }
+  
+  /* 游戏介绍部分 */
+  .game-info {
+    padding: 50px 20px;
+    background-color: #222;
+  }
+  
+  .game-info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .game-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ccc;
+  }
+  
+  /* 媒体展示部分 */
+  .media-showcase {
+    background-color: #111;
+    padding: 50px 20px;
+  }
+  
+  .media-showcase h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .video-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  video {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* 文化影响部分 */
+  .culture-impact {
+    padding: 50px 20px;
+    background-color: #333;
+  }
+  
+  .culture-impact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f39c12;
+  }
+  
+  .culture-impact p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ccc;
+  }
+  
+  /* 彩蛋揭秘部分 */
+  .easter-eggs {
+    padding: 50px 20px;
+    background-color: #222;
+  }
+  
+  .easter-eggs h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f39c12;
+  }
+  
+  .easter-eggs p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ccc;
+  }
+  
+  /* 底部样式 */
+  footer {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    color: #ccc;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  
+  
